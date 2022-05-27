@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!-- FONT ROTOBO -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- STYLE CSS -->
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    
+    <!--CALCULADORA-->
+    <div class="calculadora">
+        <!--Display-->
+        <div class="display">
+            <input id="display" placeholder="0" disabled>
+            <h2 id="history"></h2>
+        </div>
+        <!--BUTTONS-->
+        <div class="linhas">
+            <button class="button purple-text" onclick="limpar()">AC</button>
+        </div>
+        <div></div>
+        <div></div>
+        <div class="linhas">
+            <button class="Botão" onclick="add_numero(7)">7</button>
+            <button class="Botão" onclick="add_numero(8)">8</button>
+            <button class="Botão" onclick="add_numero(9)">9</button>
+            <button class="Botão" onclick="add_operador('*')">x</button>
+        </div>
+        <div class="linhas">
+            <button class="Botão" onclick="add_numero(4)">4</button>
+            <button class="Botão" onclick="add_numero(5)">5</button>
+            <button class="Botão" onclick="add_numero(6)">6</button>
+            <button class="Botão" onclick="add_operador('-')"> - </button>
+        </div>
+        <div class="linhas">
+            <button class="Botão" onclick="add_numero(1)">1</button>
+            <button class="Botão" onclick="add_numero(2)">2</button>
+            <button class="Botão" onclick="add_numero(3)">3</button>
+            <button class="Botão" onclick="add_operador('+')"> + </button>
+        </div>
+        <div class="linhas">
+            <button class="Botão" onclick="add_operador('/')">/</button>
+            <button class="Botão" onclick="add_numero(0)">0</button>
+            <button class="Botão" onclick="add_numero('.')">.</button>
+            <button class="Botão" onclick="total()">=</button>
+        </div>
+        <!--/BUTTONS-->
+    </div>
+    <!-- LINK PARA GITHUB -->
+    <div class="github">
+        <a href="https://github.com/Allamymp/Web/tree/main/calculadora" target="_blank" title="Code in GitHub">
+            <img src="img/github_icon.png" width="35" />
+        </a>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
