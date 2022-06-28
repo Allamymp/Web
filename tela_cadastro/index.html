@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./CSS/styles.css" rel="stylesheet">
-    <title>Tela de Cadastro</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <meta charset=      "UTF-8"                                                                         >
+    <meta http-equiv=   "X-UA-Compatible"       content= "IE=edge"                                      >
+    <meta name=         "viewport"              content= "width=device-width, initial-scale=1.0"        >
+    <link href=         "style.css"             rel=     "stylesheet"                                   >
+    <title>CADASTRO</title>
 </head>
-<header class="cabecalho"><p>Tela de Cadastro</p></header>
+
 <body>
-    <div class="container"></div>
+    <div class="container">
+    <a class="form_header">[FORMULÁRIO DE CADASTRO]</a>
+    <div class="formulario">
+        <form>
+            <input type="text"     id="fname"     name="fname"      placeholder="First Name"    required>  <br>
+            <input type="text"     id="lname"     name="lname"      placeholder="Last Name"     required>  <br>
+            <input type="text"     id="birthday"  name="birthday"   placeholder="Birthday"      onmouseover = "calendar()"   
+                   onmouseout = "remove_calendar()" required>  <br>
+            <input type="phone"    id="phone"     name="phone"      placeholder="Phone"         required>  <br>
+            <input type="email"    id="email"     name="email"      placeholder="Email"         required>  <br>
+            <div class="container_password">
+            <input type="password" id="password"  name="password"   placeholder="Password">         
+            <input type="password" id="cpassword" name="cpassword"  placeholder="Confirm Password"> 
+        </div>
+        </form>
+    </div>
+</div>
+<script type = "text/javascript" src="script.js"></script>  
 </body>
+
 </html>

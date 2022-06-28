@@ -1,0 +1,26 @@
+body {
+    display: inline-grid;
+    background-image: url(./images/background1.jpg);
+    background-size: 20vw 35vh;
+    gap: 1px;
+    grid-template-columns: 19vw 19vw 19vw 19vw 19vw;
+}
+
+
+
+button {
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    border-radius: 10%;
+    color: white;
+    justify-self: center;
+    text-align: center;
+    margin-top: 20vh;
+}
+
+.clock {
+    width: 15vw;
+    height: 14vh;
+    background-color: white;
+}
